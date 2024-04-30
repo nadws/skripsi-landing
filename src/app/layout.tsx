@@ -32,11 +32,9 @@ export default function RootLayout({
             <div className="border-t">
               <div className="bg-background ">
                 <div className="grid grid-cols-1">
-                  <div className="top-0 fixed z-10 w-full px-6 py-6">
+                  <div className="top-0 fixed z-10 w-full ">
                     <Header />
-                  </div>
-                  <div className="col-span-3 overflow-auto lg:col-span-5 lg:border-l">
-                    <div className="px-6 py-6 lg:px-8">{children}</div>
+                    {children}
                   </div>
                 </div>
               </div>

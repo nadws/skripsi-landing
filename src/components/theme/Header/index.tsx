@@ -19,29 +19,31 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { FaHamburger } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Header() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="pb-3 mb-8 border-b border-border flex flex-row items-center justify-between ">
+    <nav className="pb-3 mb-8 border-b border-border flex flex-row items-center justify-between ">
       <div>
         <Image
-          src="/Black_logo.svg"
-          width="100"
-          height="100"
+          src="/logo_new.png"
+          width="80"
+          height="80"
           alt="Logo"
           className="dark:hidden block"
         />
         <Image
-          src="/logo_dark.svg"
-          width="100"
-          height="100"
+          src="/logo_new.png"
+          width="80"
+          height="80"
           alt="Logo"
           className="hidden dark:block"
         />
       </div>
-      <div>
+      <div className="hidden lg:block">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -75,7 +77,7 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div>
+      <div className="mr-4 hidden lg:block">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon" className="float-end">
@@ -97,6 +99,11 @@ export default function Header() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-    </div>
+      <div className="mr-4 lg:hidden block">
+        <Button variant="outline" size="icon" className="float-end">
+          <RxHamburgerMenu className="h-6 w-6" />
+        </Button>
+      </div>
+    </nav>
   );
 }
