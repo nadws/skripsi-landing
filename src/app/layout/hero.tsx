@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row items-center  justify-center  ">
+    <div className="flex flex-row items-center  justify-center mt-8 ">
       <motion.div
         className="hidden lg:block lg:w-[50%] p-8"
         initial={{ y: 20, opacity: 0 }}
@@ -38,7 +38,7 @@ export default function Hero() {
         />
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-2xl font-bold mt-12 text-center  lg:hidden">
-            Jasa Bimbingan Pembuatan Skripsi, Tesis dan Disertasi
+            Jasa Pembuatan Skripsi, Tesis dan Disertasi
           </h1>
           <p className="text-base mt-4 text-center  lg:hidden">
             Skripsi gak perlu pusing lagi ada kami yang siap membantu anda kapan

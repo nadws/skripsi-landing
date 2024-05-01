@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className=" pb-3 mb-8 border-b border-border flex flex-row items-center justify-between bg-background">
+      <nav className=" pb-3 border-b border-border flex flex-row items-center justify-between bg-background">
         <div>
           <Image
             src="/logo_new.png"
@@ -64,7 +64,7 @@ export default function Header() {
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Service
+                    Paket
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -108,6 +108,14 @@ export default function Header() {
           </DropdownMenu>
         </div>
         <div className="mr-4 lg:hidden block">
+          <Button
+            variant="outline"
+            size="icon"
+            className="float-end"
+            onClick={buttonHandler}
+          >
+            <RxHamburgerMenu className="h-6 w-6" />
+          </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon" className="float-end">
@@ -128,14 +136,6 @@ export default function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button
-            variant="outline"
-            size="icon"
-            className="float-end"
-            onClick={buttonHandler}
-          >
-            <RxHamburgerMenu className="h-6 w-6" />
-          </Button>
         </div>
       </nav>
       <div
