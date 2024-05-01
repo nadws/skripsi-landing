@@ -32,10 +32,10 @@ export default function RootLayout({
             <div className="border-t">
               <div className="bg-background ">
                 <div className="grid grid-cols-1">
-                  <div className="top-0 fixed z-10 w-full ">
+                  <div className="fixed w-full z-20 top-0 start-0">
                     <Header />
-                    {children}
                   </div>
+                  <div className="w-full mt-36">{children}</div>
                 </div>
               </div>
             </div>
