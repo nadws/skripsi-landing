@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function Paket() {
   return (
@@ -40,9 +41,13 @@ export default function Paket() {
               bab skripsi, aplikasi dan unlimited revisi.
             </p>
           </CardContent>
-          {/* <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter> */}
+          <CardFooter>
+            <Button variant={"default"} className="mx-auto">
+              <a href="https://api.whatsapp.com/send/?phone=6285751609104&text=Haloo%20kak%20saya%20mau%20Paket%20Bantuan%20Lengkap">
+                Pilih Paket
+              </a>
+            </Button>
+          </CardFooter>
         </Card>
         <Card className="lg:me-6 w-[350px] p-8 mb-6 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-[450px]">
           <CardContent>
@@ -62,9 +67,13 @@ export default function Paket() {
               bab skripsi.
             </p>
           </CardContent>
-          {/* <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter> */}
+          <CardFooter>
+            <Button variant={"default"} className="mx-auto">
+              <a href="https://api.whatsapp.com/send/?phone=6285751609104&text=Haloo%20kak%20saya%20mau%20Paket%20Penulisan%20Skripsi">
+                Pilih Paket
+              </a>
+            </Button>
+          </CardFooter>
         </Card>
         <Card className=" w-[350px] p-8 mb-6 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-[450px]">
           <CardContent>
@@ -83,9 +92,13 @@ export default function Paket() {
               revisi sampai acc dosen ya.
             </p>
           </CardContent>
-          {/* <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter> */}
+          <CardFooter>
+            <Button variant={"default"} className="mx-auto">
+              <a href="https://api.whatsapp.com/send/?phone=6285751609104&text=Haloo%20kak%20saya%20mau%20Paket%20Aplikasi">
+                Pilih Paket
+              </a>
+            </Button>
+          </CardFooter>
         </Card>
       </div>
     </div>
