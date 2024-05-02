@@ -23,7 +23,7 @@ export default function Paket() {
         </h3>
       </div>
       <div className="w-[100%] flex flex-col lg:flex-row items-center  justify-center mt-14">
-        <Card className="lg:me-6 w-full lg:w-[350px] mb-6 lg:mb-0 p-8 shadow-black dark:shadow-white shadow-md rounded-md h-[450px]">
+        <Card className="lg:me-6 w-full lg:w-[350px] mb-6 lg:mb-0 p-8 shadow-black dark:shadow-white shadow-md rounded-md h-full lg:h-[450px]">
           <CardContent>
             <Image
               src="/code-review.png"
@@ -49,7 +49,7 @@ export default function Paket() {
             </Button>
           </CardFooter>
         </Card>
-        <Card className="lg:me-6 w-[350px] p-8 mb-6 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-[450px]">
+        <Card className="lg:me-6 w-[350px] p-8 mb-4 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-full lg:h-[450px]">
           <CardContent>
             <Image
               src="/book.png"
@@ -75,7 +75,7 @@ export default function Paket() {
             </Button>
           </CardFooter>
         </Card>
-        <Card className=" w-[350px] p-8 mb-6 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-[450px]">
+        <Card className=" w-[350px] p-8 mb-6 lg:mb-0 shadow-black dark:shadow-white shadow-md rounded-md h-full lg:h-[450px]">
           <CardContent>
             <Image
               src="/coding.png"
